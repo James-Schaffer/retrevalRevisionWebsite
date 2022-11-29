@@ -1,0 +1,169 @@
+html {
+  height: 100%;
+}
+  
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial;
+}
+  
+body {
+  min-height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  color: #ffffff;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 450%;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+h2 {
+  color: #000000;
+  text-align: left;
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-bottom: 40px;
+  font-size: 300%;
+  font-weight: bold;
+}
+
+h3 {
+  color: #000000;
+  text-align: left;
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-bottom: 30px;
+  font-size: 180%;
+}
+
+.header {
+  background-color: #575757;
+  padding: 10px;
+  color: #999999;
+  align-content: center;
+}
+
+/*Navbar css, top of page ======================================================*/
+.navbar {
+  position: relative;
+  width: 100%;
+  background-color: #848484;
+  padding: 10px;
+  color: #999999;
+  align-content: center;
+}
+
+.navbuttons {
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.15s;
+}
+
+.navbuttons:hover {
+  opacity: 0.6;
+  box-shadow: 10px 10px 0 #ffffff;
+}
+
+.navbuttons:active {
+  background-color: #ffffff;
+  color: #000000;
+  box-shadow: -10px -10px 0px #000000;
+  opacity: 1;
+}
+
+/*Footer css, top of page ======================================================*/
+.footer {
+  position: fixed;
+  bottom: 0;
+  height: 60px;
+  width: 100%;
+  padding: 0;
+  border: 0;
+}
+
+.footer > .buffer {
+  width: 100%;
+  height: 10%;
+  background-color: #ffffff;
+}
+
+.footer > .footerBar {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #575757;
+}
+
+.footer > .footerBar > .footerButton {
+  margin: 5px;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.15s;
+}
+
+.footer > .footerBar > .footerButton:hover {
+  background-color: #6a6a6a;
+}
+
+/*================================================================================*/
+
+.main {
+  background-color:#D8BFD8;
+  height:100%;
+  width:100%;
+  display: flex;
+  justify-content: center;
+  padding: 5%;
+}
+
+.grid {
+  width: 80%;
+  min-width: 500px;
+  max-width: 1000px;
+  min-height: 700px;
+  display: grid;
+
+  grid-template-columns: repeat(5, 20%);
+  grid-template-rows: repeat(5, 20%);
+}
+
+.cell {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1/1;
+  border:2px inset gray;
+}
+
+.cell:after {
+  display: block;
+  padding-bottom: 100%;
+}
+
+.lastlesson {
+  background-color:#48D1CC;
+}
+.lastweek {
+  background-color:#6B8E23;
+}
+.older {
+  background-color:#87CEEB;
+}
